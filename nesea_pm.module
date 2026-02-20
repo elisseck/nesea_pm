@@ -1,0 +1,10 @@
+<?php
+use Drupal\node\Entity\Node;
+use Drupal\Core\Datetime\DrupalDateTime;
+
+function nesea_pm_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'private_message_add_form') {
+    var_dump($form['edit-members-target-id']);
+    die();
+  }
+}
