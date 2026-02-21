@@ -4,7 +4,9 @@ use Drupal\Core\Datetime\DrupalDateTime;
 
 function nesea_pm_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   if ($form_id == 'private_message_add_form') {
-    var_dump($form['edit-members-target-id']);
-    die();
+//var_dump($form['members']['widget']['target_id']);
+//die();
+    $form['members']['widget']['target_id']['#attributes']['readonly'] = 'readonly';
+    $form['#attached']['library'][] = 'nesea_pm/nesea_pm-form-js';
   }
 }

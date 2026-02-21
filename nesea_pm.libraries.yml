@@ -1,0 +1,7 @@
+nesea_pm-form-js:
+  js:
+    js/nesea-pm.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.behaviors
