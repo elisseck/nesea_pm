@@ -9,5 +9,6 @@ function nesea_pm_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_
   }
   if ($form_id == 'block_user_form') {
     $form['banned_user']['#access'] = false;
+    $form['submit']['#access'] = false;
   }
 }
